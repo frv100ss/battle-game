@@ -6,7 +6,7 @@ import {Decks} from '../controller/Decks';
 const store = createStore(
     combineReducers({
         Decks,
-    }),
+    })
 );
 
 

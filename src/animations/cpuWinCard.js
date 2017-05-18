@@ -19,7 +19,7 @@ export function animCpuWin() {
         userBattle = $('.user-card-battle'),
         cpuInsideBattle = $('.cpu-card-inside-battle'),
         cpuBattle = $('.cpu-card-battle'),
-        tl = new TimelineMax({paused:true, onComplete: console.log('completed')});
+        tl = new TimelineMax({paused:true});
 
     return tl
         .to(userBattle, 0, {

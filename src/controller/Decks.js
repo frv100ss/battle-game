@@ -9,7 +9,6 @@ export function Decks(state = PlayersDecks, action) {
                 deckUser:state.deckUser,
                 deckCpu: state.deckCpu
             };
-            console.log('CPU_WIN', state)
             return state;
             break;
 
@@ -21,7 +20,6 @@ export function Decks(state = PlayersDecks, action) {
                 deckUser:state.deckUser,
                 deckCpu: state.deckCpu
             };
-            console.log('USER_WIN', state);
             return state;
             break;
 
@@ -41,7 +39,6 @@ export function Decks(state = PlayersDecks, action) {
                 deckUser:state.deckUser,
                 deckCpu: state.deckCpu
             };
-            console.log('CPU_WIN_BATTLE', state)
             return state;
             break;
 
@@ -61,7 +58,6 @@ export function Decks(state = PlayersDecks, action) {
                 deckUser:state.deckUser,
                 deckCpu: state.deckCpu
             };
-            console.log('USER_WIN_BATTLE', state)
             return state;
             break;
 
