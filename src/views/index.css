@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body .App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .App .user-card-container {
+  z-index: 999;
+  position: relative;
+  height: 420px;
+  width: 206px;
+}
+body .App .user-card-container .user-card-image {
+  position: absolute;
+  height: 298px;
+  width: 205px;
+}
+body .App .user-card-container .user-card-verso {
+  position: absolute;
+  height: 300px;
+  width: 208px;
+  top: 101px;
+}
+body .App .user-card-container .user-card-inside-battle {
+  position: absolute;
+  height: 100px;
+  width: 69px;
+  opacity: 0;
+}
+body .App .user-card-container .user-card-battle {
+  position: absolute;
+  height: 298px;
+  width: 205px;
+  opacity: 0;
+}
+body .App .cpu-card-container {
+  z-index: 999;
+  position: relative;
+  height: 420px;
+  width: 206px;
+}
+body .App .cpu-card-container .cpu-card-image {
+  position: absolute;
+  height: 298px;
+  width: 205px;
+}
+body .App .cpu-card-container .cpu-card-verso {
+  position: absolute;
+  height: 300px;
+  width: 208px;
+  top: 101px;
+  left: -2px;
+}
+body .App .cpu-card-container .cpu-card-inside-battle {
+  position: absolute;
+  height: 100px;
+  width: 69px;
+  opacity: 0;
+}
+body .App .cpu-card-container .cpu-card-battle {
+  position: absolute;
+  height: 298px;
+  width: 205px;
+  opacity: 0;
+}
+body .App .btn-wrapper {
+  align-self: center;
+}
+body .App .btn-wrapper .btn-play {
+  height: 50px;
+  margin: 0 30px;
+}
+body .App .root-test {
+  height: 100px;
+  width: 100px;
+  background-color: #7fff00;
+}
+body .App .modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border: 1px solid #808080;
+  background-color: #d4d3d2;
+  z-index: -1;
+}
+body .App .modal .modal-btn-close {
+  cursor: pointer;
+}
+body .App .modal .modal-btn-close:before {
+  content: '';
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid #000;
+  right: 15px;
+  top: 15px;
+}
+body .App .modal .modal-btn-close:after {
+  content: 'X';
+  border-radius: 50%;
+  position: absolute;
+  right: 55px;
+  font-size: 40px;
+  top: 45px;
+}
+body .App .modal p {
+  margin-top: 45vh;
+  text-align: center;
+  font-size: 30px;
+}

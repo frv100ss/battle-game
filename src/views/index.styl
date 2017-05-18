@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  .App {
+    display flex
+    flex-direction row
+    justify-content center
+
+    .user-card-container {
+      z-index 999;
+      position: relative;
+      height: 420px;
+      width: 206px;
+
+      .user-card-image {
+        position: absolute
+        height: 298px;
+        width: 205px;
+      }
+
+      .user-card-verso {
+        position: absolute;
+        height: 300px;
+        width: 208px;
+        top: 101px;
+
+      }
+      .user-card-inside-battle {
+        position: absolute;
+        height: 100px;
+        width: 69px;
+        opacity: 0
+      }
+
+      .user-card-battle {
+        position: absolute
+        height: 298px;
+        width: 205px;
+        opacity: 0
+      }
+    }
+    .cpu-card-container {
+      z-index 999
+      position: relative;
+      height: 420px;
+      width: 206px;
+
+      .cpu-card-image {
+        position: absolute
+        height: 298px;
+        width: 205px;
+      }
+
+      .cpu-card-verso {
+        position: absolute;
+        height: 300px;
+        width: 208px;
+        top: 101px;
+        left: -2px;
+
+      }
+
+      .cpu-card-inside-battle {
+        position: absolute;
+        height: 100px;
+        width: 69px;
+        opacity: 0
+      }
+
+      .cpu-card-battle {
+        position: absolute
+        height: 298px;
+        width: 205px;
+        opacity: 0
+      }
+    }
+
+    .btn-wrapper {
+      align-self center
+      .btn-play {
+        height: 50px
+        margin: 0 30px
+      }
+    }
+
+    .root-test {
+      height: 100px
+      width: 100px
+      background-color chartreuse
+    }
+
+    .modal {
+      display: block
+      position: fixed;
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      opacity: 0
+      border: 1px solid grey
+      background-color: #D4D3D2;
+      z-index: -1
+
+
+      .modal-btn-close {
+        cursor pointer
+        &:before {
+          content: ''
+          height: 100px
+          width: 100px
+          border-radius: 50%
+          position absolute
+          border: 3px solid black
+          right: 15px
+          top: 15px
+        }
+        &:after {
+          content: 'X'
+          border-radius: 50%
+          position absolute
+          right: 55px
+          font-size: 40px;
+          top: 45px
+        }
+      }
+      p {
+        margin-top 45vh;
+        text-align center
+        font-size: 30px;
+      }
+    }
+  }
+}
+
